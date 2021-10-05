@@ -1,0 +1,47 @@
+@api = http://localhost:8000/api/register
+@apilogin = http://localhost:8000/api/login
+
+@apiproject = http://localhost:8000/api/project
+
+{{api}}
+
+### ADD USER
+POST {{api}}
+Content-Type: application/json
+
+{
+    "usuario": "ola",
+    "nombre": "cualquiera",
+    "avatar": "C:/Users/adono/Downloads/hqdefault.png",
+    "profesion": "xd",
+    "biografia": "fljkdflk",
+    "correo": "jsdhks@mail.com",
+    "pass": "pass123"
+}
+### GET USER
+{{api}}/29
+
+###ejreo
+POST http://localhost:8000/api/login
+Content-Type: application/json
+
+{
+    "usuario": "xd",
+    "password": "pass123"
+}
+
+
+### DELETE USER
+DELETE {{api}}/4
+
+### update
+POST http://localhost:8000/api/project/1
+
+###SEARCH
+
+POST http://localhost:8000/api/search
+Content-Type: application/json
+
+{
+    "username": "ci2"
+}
